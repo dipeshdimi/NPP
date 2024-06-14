@@ -1,0 +1,51 @@
+.App {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-shadow: 0px 0px 5px black;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+header {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .inspiration {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  .timeline {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .pa-sangma-img {
+    max-width: 100%;
+  }
+}

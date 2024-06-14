@@ -1,0 +1,110 @@
+.header {
+  display: flex;
+  align-items: stretch;
+}
+
+.logo {
+  padding: 2vw 5vw;
+  /* cursor: pointer; */
+}
+.logo img {
+  height: 10vh;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  column-gap: 2em;
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+nav ul li {
+  cursor: pointer;
+  font-size: 2.7vh;
+  flex: 1 1 auto; /* Ensure flexible width */
+  text-align: center; /* Center align text */
+  margin: 5px;
+  display: flex; /* Ensure children are aligned in a row */
+  align-items: center; /* Center children vertically */
+  justify-content: center; /* Center children horizontally */
+}
+
+nav ul li img {
+  width: auto;
+  height: 2.7vh; /* Ensure image height matches font size */
+  max-width: 100%; /* Ensure image doesn't overflow its container */
+}
+
+.top {
+  font-size: 2.1vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 5vw;
+  cursor: pointer;
+
+  button {
+    background-color: #e6b800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5vh;
+
+    span {
+      margin-left: 8px;
+    }
+  }
+}
+
+.top select {
+  padding: 3px;
+  border-radius: 3px;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  border: 1px solid white;
+  font-size: 1.5vh;
+  cursor: pointer;
+
+  option {
+    background-color: gray;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .logo img {
+    height: 3em;
+  }
+  .disappear {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav {
+    height: 10vh !important;
+    width: fit-content;
+    padding: 2.2vh;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .logo {
+    width: 4vw;
+  }
+}
